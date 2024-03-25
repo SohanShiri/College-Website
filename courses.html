@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Courses Offered</title>
+    <style>
+      body {
+        background-image: url("image4.jpg");
+        background-size: cover;
+        background-position: center;
+        animation: fade 20s infinite;
+      }
+  
+      @keyframes fade {
+        0% {
+          background-image: url("image7.jpg");
+        }
+        25% {
+          background-image: url("image5.jpg");
+        }
+        50% {
+          background-image: url("imgchem.jpg");
+        }
+        75% {
+          background-image: url("imglab.jpg");
+        }
+        100% {
+          background-image: url("semhall.jpg");
+        }
+      }
+    </style>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      
+      .course-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      
+      
+      .course-card {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        max-width: 300px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      
+      .course-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      
+      .course-description {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Courses Offered</h1>
+    <div class="course-list">
+      <div class="course-card">
+        <div class="course-title">BCA</div>
+        <div class="course-description">This course teaches programming languages, algorithms, data structures, and other computer science concepts.</div>
+      </div>
+      <div class="course-card">
+        <div class="course-title">BCOM</div>
+        <div class="course-description">This course teaches business management, accounting, marketing, and other business concepts.</div>
+      </div>
+      <div class="course-card">
+        <div class="course-title">ARTS</div>
+        <div class="course-description">This course teaches human behavior, mental processes, and other psychology concepts.</div>
+      </div>
+      <div class="course-card">
+        <div class="course-title">BSC</div>
+        <div class="course-description">This course teaches the study of living organisms, including their structure, function, growth, and evolution.</div>
+      </div>
+    </div>
+  </body>
+</html>

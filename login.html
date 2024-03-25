@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        background-image: url("image9.jpg");
+        background-size: cover;
+        background-position: center;
+        animation: fade 20s infinite;
+      }
+  
+      @keyframes fade {
+        0% {
+          background-image: url("image7.jpg");
+        }
+        25% {
+          background-image: url("semhall.jpg");
+        }
+        50% {
+          background-image: url("ncc2.jpg");
+        }
+        75% {
+          background-image: url("image4.jpg");
+        }
+        100% {
+          background-image: url("image6.jpg");
+        }
+      }
+    </style>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+      
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+    
+      input[type="text"], input[type="password"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+     
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      
+      input[type="text"]:focus, input[type="password"]:focus {
+        border: 2px solid #4CAF50;
+      }
+
+     
+      @keyframes slide-in {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      .login-form {
+        animation: slide-in 0.5s ease-out;
+      }
+
+      
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      input[type="submit"]:hover {
+        animation: pulse 0.5s ease-out;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="login-form">
+      <h2>Login</h2>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </body>
+</html>
